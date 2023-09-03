@@ -11,25 +11,21 @@ import AboutMe from './sections/AboutMe';
 import Portfolio from './sections/Portfolio';
 import Contact from './sections/Contact';
 import Footer from './components/Footer';
-import keyImage from './assets/key.png';
 
 
 const App = () => {
   const [showEntryPage, setShowEntryPage] = useState(true);
 
-  useEffect(() => {
-    // Create a new style element
-    const styleElement = document.createElement('style');
-    // Set the style content to set the cursor for the body element
-    styleElement.innerHTML = `body { cursor: url(${keyImage}), auto; }`;
-    // Append the style element to the head of the document
-    document.head.appendChild(styleElement);
+    useEffect(() => {
+      const cursorGlitter = document.createElement('div');
+      cursorGlitter.className = 'cursor-glitter';
+      document.body.appendChild(cursorGlitter);
 
-    // Cleanup: remove the style element when the component unmounts
-    return () => {
-      document.head.removeChild(styleElement);
-    };
-  }, []); // Empty dependency array means this useEffect runs once when the component mounts
+ // Cleanup function to remove the glitter element when the component unmounts
+ return () => {
+  document.body.removeChild(cursorGlitter);
+};
+}, []);
 
   const handleEntryPageClick = () => {
     setShowEntryPage(false);

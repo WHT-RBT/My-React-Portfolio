@@ -1,6 +1,6 @@
 body {
     cursor: url('../src/assets/key.png'), auto;
-  }
+}
 
 body,
 html {
@@ -28,31 +28,30 @@ html {
 
 
 .keyhole-container {
-    cursor: url('../src/assets/key.png'), auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 80%;
-    height: 80%;
+    width: 50%;
+    height: 50%;
     margin: auto;
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-  }
+}
 
-  .keyhole-container img {
-    max-width: 10%;  
-    max-height: 10%; 
+.keyhole-container img {
+    max-width: 40%;
+    max-height: 40%;
     border-color: #ccc;
-  }
-    
+}
+
 .unlock-text {
-    color: rgb(205, 135, 222);
+    color: rgb(252, 193, 0);
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
-    font-size: 24px;
+    font-size: 38px;
     text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff;
     position: absolute;
     top: 50%;
@@ -66,6 +65,33 @@ html {
     opacity: 1;
 }
 
+/* Cursor Glitter Effect */
+.cursor-glitter {
+    position: absolute;
+    pointer-events: none;
+    width: 20px;
+    height: 20px;
+    background-color: transparent;
+    background-image: radial-gradient(circle, rgb(252, 237, 173));
+    transform: translate(-50%, -50%);
+    animation: cursorGlitter 0.5s infinite;
+    z-index: 9999;
+    /* Ensure the glitter is above other elements */
+}
+
+@keyframes cursorGlitter {
+
+    0%,
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+
+    50% {
+        opacity: 0.2;
+        transform: scale(2);
+    }
+}
 
 header {
     display: flex;
