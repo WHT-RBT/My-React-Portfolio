@@ -1,0 +1,375 @@
+body {
+    cursor: url('../src/assets/key.png'), auto;
+  }
+
+body,
+html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.entry-page {
+    width: 100%;
+    height: 100vh;
+    /* 100% of the viewport height */
+    background-color: black;
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+
+.keyhole-container {
+    cursor: url('../src/assets/key.png'), auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .keyhole-container img {
+    max-width: 10%;  
+    max-height: 10%; 
+    border-color: #ccc;
+  }
+    
+.unlock-text {
+    color: rgb(205, 135, 222);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+    font-size: 24px;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.keyhole-container:hover .unlock-text {
+    opacity: 1;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f2f2f2;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.hummingbird {
+    width: 100px;
+    height: 100px;
+}
+
+/* Styling for the hummingbird animation */
+@keyframes flyAwayAndReturn {
+    0% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+
+    50% {
+        transform: translateX(-200px);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.hummingbird {
+    width: 50px;
+    animation: flyAwayAndReturn 45s infinite;
+}
+
+.entry-page {
+    background-color: black;
+}
+
+.video-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+@media (max-width: 768px) {
+    .video-background {
+        object-fit: contain;
+    }
+}
+
+/* Styling for navigation links */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #ffffff;
+    color: rgb(99, 98, 98);
+}
+
+nav a {
+    padding: 14px 20px;
+    text-decoration: none;
+    color: rgb(133, 105, 105);
+}
+
+/* styling for the React scroll  */
+.Element {
+    transition: all 0.5s ease-in-out;
+}
+
+.audio-player.hidden {
+    display: none;
+}
+
+.audio-player.visible {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+/* Home.css */
+
+.home-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.tagline {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.content-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.top-content,
+.bottom-content {
+    border: 2px solid #000;
+    /* i added borders for visualization */
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .content-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+/* Contact Section */
+.contact-section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.background-video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.contact-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.contact-links a {
+    margin-right: 10px;
+}
+
+.resume-download {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.resume-download:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    font-size: 24px;
+    color: #333;
+}
+
+.social-icons a:hover {
+    color: #0077b5;
+    /* LinkedIn blue for hover */
+}
+
+.nav-item img {
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav-item img:hover {
+    transform: scale(1.1);
+}
+
+.koi-video-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+}
+
+.koi-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Portfolio Page */
+.portfolio-section {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 16px;
+}
+
+.portfolio-item {
+    background-color: #ccc;
+    padding: 20px;
+    text-align: center;
+}
+
+.item1 {
+    grid-column: span 2;
+    grid-row: span 1;
+}
+
+.item2 {
+    grid-column: span 1;
+    grid-row: span 2;
+}
+
+.item3 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.item4 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.item5 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.item6 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+.item7 {
+    grid-column: span 1;
+    grid-row: span 1;
+}
+
+/* About Me */
+.about-me {
+    /* need to decide on styling */
+}
+
+.top-section {
+    display: flex;
+}
+
+.profile-image {
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profile-image img {
+    width: 100%;
+}
+
+.ripple {
+    /* need to add my ripple animation */
+}
+
+.text-blocks {
+    /* need to style my text blocks */
+}
+
+.bottom-section {
+    background-size: cover;
+    background-position: center;
+}
+
+
+.about-me {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* Adjust as needed */
+}
+
+#aboutMeVideo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
