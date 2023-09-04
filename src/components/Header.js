@@ -20,7 +20,7 @@ useEffect(() => {
         clearInterval(interval);
       };
     }, 5000); // 5 second delay to hide to hide the video
-  }, []);
+  },);
 
   return (
     <header style={{ height: '450px' }}>
