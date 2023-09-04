@@ -15,11 +15,11 @@ useEffect(() => {
       const interval = setInterval(() => {
         toggleHummingbird();
         setTimeout(toggleHummingbird, 5000); // Hide after 5 seconds
-      }, 25000); // Show every 35 seconds (5 seconds for playing + 30 seconds for waiting)
+      }, 30000); // Shows every 35 seconds
       return () => {
         clearInterval(interval);
       };
-    }, 5000); // 5 second delay to hide to hide the video
+    }, 15000); // 15 second delay to hide video
   },);
 
   return (
