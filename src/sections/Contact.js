@@ -1,6 +1,7 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from 'react';
+import whtrbtVideo from '../assets/whtrbt.mp4';
 
-const FORM_ENDPOINT = "https://herotofu.com/start"; // TODO - update to the correct endpoint
+const FORM_ENDPOINT = 'https://public.herotofu.com/v1/33e0e2a0-4b5a-11ee-b711-0fdc810d0d65';
 
 const ContactForm = () => {
     const [submitted, setSubmitted] = useState(false);
@@ -26,13 +27,12 @@ const ContactForm = () => {
         })
             .then((response) => {
                 if (!response.ok) {
-                    throw new Error('Form response was not ok');
+                    throw new Error('Form response not successful!');
                 }
 
                 setSubmitted(true);
             })
             .catch((err) => {
-                // Submit the form manually
                 e.target.submit();
             });
     };
@@ -47,7 +47,8 @@ const ContactForm = () => {
     }
 
     return (
-        <form className="contact-form-container"
+        <form
+            className="contact-form-container"
             action={FORM_ENDPOINT}
             onSubmit={handleSubmit}
             method="POST"
@@ -69,7 +70,7 @@ const ContactForm = () => {
                     className="focus:outline-none focus:ring relative w-full px-3 py-3 text-sm text-gray-600 placeholder-gray-400 bg-white border-0 rounded shadow outline-none"
                     required
                 />
-           </div>
+            </div>
             <div className="pt-0 mb-3">
                 <textarea
                     placeholder="Message me here..."
@@ -87,7 +88,40 @@ const ContactForm = () => {
                 </button>
             </div>
         </form>
+
     );
 };
 
-export default ContactForm;
+const ContactVideo = () => {
+
+    const [showWhtrbt, setShowWhtrbt] = useState(true);
+
+    useEffect(() => {
+        setTimeout(() => setShowWhtrbt(false), 5000);
+    }, []);
+
+    const [videoPlaying, setVideoPlaying] = useState(true);
+
+    const handleVideoEnded = () => {
+        const videoElement = document.getElementById('ContactVideo');
+        setVideoPlaying(false);
+
+        setTimeout(() => {
+            videoElement.play();
+            setVideoPlaying(true);
+        }, 15000);  // waits 15 seconds
+    };
+
+    return (
+        <div className="bottom-section">
+            {showWhtrbt && (
+                <video id="ContactVideo" muted loop={videoPlaying} autoPlay={videoPlaying} onEnded={handleVideoEnded} style={{ width: '50%', height: 'auto' }}>
+                    <source src={whtrbtVideo} type="video/mp4" />
+                </video>
+            )}
+            <ContactForm /> 
+        </div>
+    );
+};
+
+export default ContactVideo;

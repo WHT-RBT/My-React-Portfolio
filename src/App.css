@@ -374,6 +374,7 @@ textarea:focus {
 
 textarea {
     resize: vertical;
+    height: 200px;
 }
 
 .button {
