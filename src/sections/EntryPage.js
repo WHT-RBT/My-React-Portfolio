@@ -3,13 +3,11 @@ import keyImage from '../assets/key.png';
 import keyholeImage from '../assets/keyhole.png';
 import entryVideo from '../assets/entryvideo.mp4';
 import song1 from '../assets/song1.mp3';
-import Ripples from 'react-ripples';
 
 const EntryPage = ({ onEnter }) => {
     const videoRef = useRef(null);
     const audioRef = useRef(null);
     const [started, setStarted] = useState(false);
-    const [showRippleButton, setShowRippleButton] = useState(false);
 
     const handleKeyholeClick = () => {
         setStarted(true);
@@ -24,7 +22,7 @@ const EntryPage = ({ onEnter }) => {
 
     useEffect(() => {
         const handleVideoEnd = () => {
-            setShowRippleButton(true);
+            onEnter()
         };
 
         const currentVideoRef = videoRef.current;
@@ -36,11 +34,7 @@ const EntryPage = ({ onEnter }) => {
                 currentVideoRef.removeEventListener('ended', handleVideoEnd);
             };
         }
-    }, []);
-
-    const handleRippleClick = () => {
-        onEnter(); // Navigate to Home
-    };
+    }, );
 
     return (
         <div className="entry-page" style={{ backgroundColor: 'black' }}>
@@ -59,13 +53,6 @@ const EntryPage = ({ onEnter }) => {
                     <audio ref={audioRef} loop={false} className="hidden">
                         <source src={song1} type="audio/mp3" />
                     </audio>
-                    {showRippleButton && (
-                        <Ripples color="#007bff">
-                            <button className="ripple-button" onClick={handleRippleClick}>
-                                Enter Here
-                            </button>
-                        </Ripples>
-                    )}
                 </>
             )}
         </div>

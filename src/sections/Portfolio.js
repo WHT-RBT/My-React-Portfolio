@@ -10,6 +10,11 @@ const Portfolio = () => {
         <div className="portfolio-item item5">GitHub1</div>
         <div className="portfolio-item item6">GitHub2</div>
         <div className="portfolio-item item7">GitHub3</div>
+        <div className="portfolio-item item7">SomethingElse </div>
+        <div className="portfolio-item item7">Book1</div>
+        <div className="portfolio-item item7">Book2</div>
+        <div className="portfolio-item item7">etsy</div>
+
       </div>
     );
   };

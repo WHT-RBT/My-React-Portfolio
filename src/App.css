@@ -44,7 +44,6 @@ html {
 .keyhole-container img {
     max-width: 40%;
     max-height: 40%;
-    border-color: #ccc;
 }
 
 .unlock-text {
@@ -97,20 +96,23 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px;
-    background-color: #f2f2f2;
+    background-color: #ffffff;
+    
 }
 
 .logo-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 1rem;
+    margin: 0
 }
 
-.hummingbird {
+.hummingbirdvideo {
     width: 100px;
     height: 100px;
+    position: absolute;
+    top: 0;
+    right: 0;
 }
 
 /* Styling for the hummingbird animation */
@@ -131,15 +133,6 @@ header {
     }
 }
 
-.hummingbird {
-    width: 50px;
-    animation: flyAwayAndReturn 45s infinite;
-}
-
-.entry-page {
-    background-color: black;
-}
-
 .video-background {
     position: fixed;
     top: 0;
@@ -157,18 +150,22 @@ header {
 }
 
 /* Styling for navigation links */
-nav {
+nav, nav a {
     display: flex;
     justify-content: center;
+    align-items: center;
+    text-decoration: none;
     background-color: #ffffff;
-    color: rgb(99, 98, 98);
+    color: rgb(133, 105, 105);
+    cursor: pointer;
+    height: 40px;
 }
 
-nav a {
-    padding: 14px 20px;
-    text-decoration: none;
-    color: rgb(133, 105, 105);
+nav:hover, nav a:hover {
+    color: #c00d0d;
+
 }
+
 
 /* styling for the React scroll  */
 .Element {
@@ -228,14 +225,6 @@ nav a {
     height: 100vh;
 }
 
-.background-video {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    z-index: -1;
-}
-
 .contact-content {
     position: absolute;
     top: 50%;
@@ -277,35 +266,10 @@ nav a {
 }
 
 .social-icons a:hover {
-    color: #0077b5;
+    color: #9700b5;
     /* LinkedIn blue for hover */
 }
 
-.nav-item img {
-    width: 50px;
-    height: 50px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-
-.nav-item img:hover {
-    transform: scale(1.1);
-}
-
-.koi-video-container {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: -2;
-}
-
-.koi-video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
 
 /* Portfolio Page */
 .portfolio-section {
@@ -356,29 +320,23 @@ nav a {
 }
 
 /* About Me */
-.about-me {
-    /* need to decide on styling */
-}
-
 .top-section {
-    display: flex;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: left;
+
 }
 
 .profile-image {
-    border-radius: 50%;
-    overflow: hidden;
+    margin-left: 120px;
+    margin-top: 60px;
+    margin-bottom: 40px;
+    
 }
 
-.profile-image img {
-    width: 100%;
-}
-
-.ripple {
-    /* need to add my ripple animation */
-}
-
-.text-blocks {
-    /* need to style my text blocks */
+.text-blocks p {
+    margin-left: 40px;
+    padding: 15px 15px 15px 15px;
 }
 
 .bottom-section {
@@ -391,11 +349,23 @@ nav a {
     position: relative;
     width: 100%;
     height: 100vh;
-    /* Adjust as needed */
+    overflow: hidden;
 }
 
 #aboutMeVideo {
     width: 100%;
-    height: 100%;
+    height: 100vh;
     object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+.page-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
 }
