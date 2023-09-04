@@ -43,7 +43,7 @@ const Navigation = () => {
             <Link to="portfolio" smooth={true} duration={300} offset={-40} style={{ width: '100px', height: '40px' }}>
                 Portfolio
             </Link>
-            <Link to="contact" smooth={true} duration={300} offset={-50} style={{ width: '100px', height: '40px' }}>
+            <Link to="contact" smooth={true} duration={300} offset={-40} style={{ width: '100px', height: '40px' }}>
                 Contact
             </Link>
             <a href={resumePDF} download="Resume_Lavina.pdf" className="resume-download" style={{ width: "100px", height: "8px", border: "none", display: "flex", alignItems: "center", justifyContent: "center" }}>
