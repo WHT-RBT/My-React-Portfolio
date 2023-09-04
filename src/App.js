@@ -2,11 +2,13 @@ import React, { useState, useEffect } from 'react';
 import 'font-awesome/css/font-awesome.min.css';
 import './App.css';
 import { Element, scroller } from 'react-scroll';
+
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Navigation from './components/Navigation';
 // import AudioPlayer from './components/AudioPlayer';
 import ErrorBoundary from './ErrorBoundary'; 
+import Home from './sections/Home';
 import EntryPage from './sections/EntryPage';
 import AboutMe from './sections/AboutMe';
 import Portfolio from './sections/Portfolio';
@@ -51,6 +53,11 @@ const handleEntryPageClick = () => {
           <ErrorBoundary>
             <Navigation />
           </ErrorBoundary>
+          <Element name="home">
+            <ErrorBoundary>
+              <Home />
+            </ErrorBoundary>
+          </Element>
           <Element name="aboutMe">
             <ErrorBoundary>
               <AboutMe />

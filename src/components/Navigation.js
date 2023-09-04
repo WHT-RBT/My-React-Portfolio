@@ -33,17 +33,17 @@ const Navigation = () => {
     };
 
     return (
-        <nav style={{ border: '1px solid rgb(133, 105, 105)', alignItems: "center", justifyContent: "center" }} >
-            <Link to="aboutMe" smooth={true} style={{ width: '100px', height: '30px' }}>
+        <nav style={{ position: 'fixed', top: 0, left: 0, width: '100%', zIndex: 100, border: '1px solid rgb(133, 105, 105)', alignItems: "center", justifyContent: "center" }} >
+            <Link to="aboutMe" smooth={true} duration={1111} offset={-50} style={{ width: '100px', height: '30px' }}>
                 About Me
             </Link>
-            <Link to="portfolio" smooth={true} style={{ width: '100px', height: '30px' }}>
+            <Link to="portfolio" smooth={true} duration={1111} offset={-50} style={{ width: '100px', height: '30px' }}>
                 Portfolio
             </Link>
-            <Link to="contact" smooth={true} style={{ width: '100px', height: '30px' }}>
+            <Link to="contact" smooth={true} duration={1111} offset={-50} style={{ width: '100px', height: '30px' }}>
                 Contact
             </Link>
-            <a href={resumePDF} download="Resume_Lavina.pdf" className="resume-download" style={{ width: "100px", height: "10px", border: "none", display: "flex", alignItems: "center", justifyContent: "center" }}>
+            <a href={resumePDF} download="Resume_Lavina.pdf" className="resume-download" style={{ width: "100px", height: "8px", border: "none", display: "flex", alignItems: "center", justifyContent: "center" }}>
                 Get Resume
             </a>
             <div className="social-icons" style={{ display: 'flex', justifyContent: 'space-between' }}>

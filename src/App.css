@@ -17,6 +17,7 @@ html {
     background-color: black;
 }
 
+
 .video {
     position: fixed;
     top: 0;
@@ -165,6 +166,14 @@ nav:hover, nav a:hover {
     color: #c00d0d;
 }
 
+/* .navigation {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff; 
+    z-index: 100; 
+} */
 
 /* styling for the React scroll  */
 .Element {
@@ -188,7 +197,7 @@ nav:hover, nav a:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 50px 0;
+    padding: 20px 0;
 }
 
 .tagline {
@@ -215,27 +224,6 @@ nav:hover, nav a:hover {
     .content-container {
         grid-template-columns: 1fr;
     }
-}
-
-/* Contact Section */
-.contact-section {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-}
-
-.contact-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(255, 255, 255, 0.8);
-    padding: 20px;
-    border-radius: 10px;
-}
-
-.contact-links a {
-    margin-right: 10px;
 }
 
 .resume-download {
@@ -366,4 +354,70 @@ nav:hover, nav a:hover {
     position: relative;
     width: 100%;
     height: 100vh;
+}
+
+/* ContactForm */
+.contact-form-container {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    width: 60%;
+
+}.contact-form {
+    width: 80%;
+    max-width: 400px; 
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    font-size: 14px;
+    transition: border-color 0.2s;
+}
+
+input:focus,
+textarea:focus {
+    border-color: rgb(133, 105, 105);
+}
+
+textarea {
+    resize: vertical;
+}
+
+button {
+    background-color: rgb(133, 105, 105);
+    color: white;
+    border: none;
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: background-color 0.2s;
+}
+
+button:hover {
+    background-color: rgb(133, 105, 105);
 }
