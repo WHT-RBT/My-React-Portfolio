@@ -25,10 +25,10 @@ useEffect(() => {
   return (
     <header style={{ height: '450px' }}>
       <div className="logo-container">
-        <img src={logo} alt="Logo" className="logo" style={{ width: '800px', height: '270px' }} />
+        <img src={logo} alt="Logo" className="logo" style={{ width: '900px', height: '340px' }} />
       </div>
       {showHummingbird && (
-        <video id="HummingbirdVideo" muted autoPlay style={{ width: '800px', height: '450px' }}>
+        <video id="HummingbirdVideo" muted autoPlay style={{ width: '800px', height: '451px' }}>
           <source src={hummingbirdVideo} type="video/mp4" />
         </video>
       )}

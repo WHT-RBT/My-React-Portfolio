@@ -1,34 +1,15 @@
-import React, { useEffect, useState } from 'react';
-import cloudsVideo from '../assets/clouds.mp4';
+import React, { useState } from 'react';
+import flowersImage from '../assets/flowers.jpg'; 
 
 const Home = () => {
-    const [showClouds, setShowClouds] = useState(true);
-
-    useEffect(() => {
-        setTimeout(() => setShowClouds(false), 5000);
-    }, []);
-
-    const [videoPlaying, setVideoPlaying] = useState(true);
-
-    const handleVideoEnded = () => {
-        const videoElement = document.getElementById('HomeVideo'); // Corrected element ID
-        setVideoPlaying(false);
-
-        setTimeout(() => {
-            videoElement.play();
-            setVideoPlaying(true);
-        }, 15000); // waits for 15 seconds
-    };
+    const [showFlowers] = useState(true);
 
     return (
-        <div className="home-container">
-            <div className="clouds-section" style={{ backgroundColor: 'white', border: 'none', display: 'flex', alignItems: 'flex-start' }}>
-            {showClouds && <div className="clouds"></div>}
+        <div className="home-container" >
+            <div className="Flowers-section" style={{ backgroundColor: 'white', border: 'none', display: 'flex', alignItems: 'flex-start' }}>
+                {showFlowers && <div className="Flowers"></div>}
             </div>
-            <div className="video-section" >
-                <video id="HomeVideo" muted loop={videoPlaying} autoPlay={videoPlaying} onEnded={handleVideoEnded}>
-                    <source src={cloudsVideo} type="video/mp4" />
-                </video>
+            <div className="image-section" style={{ backgroundImage: `url(${flowersImage})`, backgroundSize: 'cover', backgroundPosition: 'center', height: '50vh' }}>
             </div>
         </div>
     );

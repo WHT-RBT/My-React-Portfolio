@@ -47,6 +47,7 @@ const handleEntryPageClick = () => {
         </ErrorBoundary>
       ) : (
         <>
+        <Element name="header"></Element>
           <ErrorBoundary>
             <Header />
           </ErrorBoundary>

@@ -13,7 +13,6 @@ html {
 .entry-page {
     width: 100%;
     height: 100vh;
-    /* 100% of the viewport height */
     background-color: black;
 }
 
@@ -48,11 +47,11 @@ html {
 }
 
 .unlock-text {
-    color: rgb(252, 193, 0);
+    color: rgb(252, 185, 0);
     font-family: Georgia, 'Times New Roman', Times, serif;
     font-style: italic;
-    font-size: 38px;
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #fff;
+    font-size: 50px;
+    text-shadow: 0 0 10px #faf5d9, 0 0 20px #faf5d9, 0 0 30px #faf5d9, 0 0 40px #faf5d9;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -63,20 +62,6 @@ html {
 
 .keyhole-container:hover .unlock-text {
     opacity: 1;
-}
-
-/* Cursor Glitter Effect */
-.cursor-glitter {
-    position: absolute;
-    pointer-events: none;
-    width: 20px;
-    height: 20px;
-    background-color: transparent;
-    background-image: radial-gradient(circle, rgb(252, 237, 173));
-    transform: translate(-50%, -50%);
-    animation: cursorGlitter 0.5s infinite;
-    z-index: 9999;
-    /* Ensure the glitter is above other elements */
 }
 
 @keyframes cursorGlitter {
@@ -175,21 +160,6 @@ nav:hover, nav a:hover {
     z-index: 100; 
 } */
 
-/* styling for the React scroll  */
-.Element {
-    transition: all 0.5s ease-in-out;
-}
-
-.audio-player.hidden {
-    display: none;
-}
-
-.audio-player.visible {
-    display: block;
-    position: absolute;
-    top: 0;
-    left: 0;
-}
 
 /* Home.css */
 
@@ -307,7 +277,6 @@ nav:hover, nav a:hover {
 
 /* About Me */
 .top-section {
-    /* display: flex; */
     flex-direction: column;
     align-items: left;
 
@@ -407,7 +376,7 @@ textarea {
     resize: vertical;
 }
 
-button {
+.button {
     background-color: rgb(133, 105, 105);
     color: white;
     border: none;

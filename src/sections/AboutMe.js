@@ -18,7 +18,7 @@ const AboutMe = () => {
         setTimeout(() => {
             videoElement.play();
             setVideoPlaying(true);
-        }, 15000);  // waits for 15 seconds
+        }, 15000);  // waits 15 seconds
     };
 
     return (
