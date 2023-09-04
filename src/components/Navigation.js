@@ -33,29 +33,29 @@ const Navigation = () => {
     };
 
     return (
-        <nav style={{ border: '1px solid rgb(133, 105, 105)' }}>
-            <Link to="aboutMe" smooth={true} style={{ border: '1px solid rgb(133, 105, 105)', width: '100px', height: '30px' }}>
+        <nav style={{ border: '1px solid rgb(133, 105, 105)', alignItems: "center", justifyContent: "center" }} >
+            <Link to="aboutMe" smooth={true} style={{ width: '100px', height: '30px' }}>
                 About Me
             </Link>
-            <Link to="portfolio" smooth={true} style={{ border: '1px solid rgb(133, 105, 105)', width: '100px', height: '30px' }}>
+            <Link to="portfolio" smooth={true} style={{ width: '100px', height: '30px' }}>
                 Portfolio
             </Link>
-            <Link to="contact" smooth={true} style={{ border: '1px solid rgb(133, 105, 105)', width: '100px', height: '30px' }}>
+            <Link to="contact" smooth={true} style={{ width: '100px', height: '30px' }}>
                 Contact
             </Link>
-            <a href={resumePDF} download="Resume_Lavina.pdf" className="resume-download">
-                Download Resume
+            <a href={resumePDF} download="Resume_Lavina.pdf" className="resume-download" style={{ width: "100px", height: "10px", border: "none", display: "flex", alignItems: "center", justifyContent: "center" }}>
+                Get Resume
             </a>
-            <div className="social-icons">
+            <div className="social-icons" style={{ display: 'flex', justifyContent: 'space-between' }}>
                 <a href="https://github.com/WHT-RBT" target="_blank" rel="noopener noreferrer">
-                    <i className="fa fa-github"></i>
+                    <i className="fa fa-github"></i> 
                 </a>
                 <a href="https://www.linkedin.com/in/lavinacastillo" target="_blank" rel="noopener noreferrer">
                     <i className="fa fa-linkedin"></i>
                 </a>
             </div>
-            <audio ref={audioRef} src={tracks[currentTrackIndex]}></audio>  {/* currentTrackIndex used here */}
-            <button onClick={isPlaying ? pauseAudio : playAudio}>
+            <audio ref={audioRef} src={tracks[currentTrackIndex]}></audio>  
+            <button onClick={isPlaying ? pauseAudio : playAudio} className="audio-control">
                 {isPlaying ? "Pause" : "Play"}
             </button>
             <button onClick={nextTrack}>Next</button>

@@ -163,7 +163,6 @@ nav, nav a {
 
 nav:hover, nav a:hover {
     color: #c00d0d;
-
 }
 
 
@@ -241,33 +240,32 @@ nav:hover, nav a:hover {
 
 .resume-download {
     display: inline-block;
+    justify-content: center;
     margin-top: 10px;
     padding: 10px 20px;
-    border: 1px solid #333;
     border-radius: 5px;
     text-decoration: none;
-    color: #333;
+    color: rgb(133, 105, 105);
     font-weight: bold;
 }
 
 .resume-download:hover {
-    background-color: #333;
-    color: #fff;
-}
-
-.social-icons {
-    margin-top: 10px;
+    color: #c00d0d;
 }
 
 .social-icons a {
-    margin: 0 10px;
+        margin: 0 10px;
     font-size: 24px;
     color: #333;
 }
 
 .social-icons a:hover {
-    color: #9700b5;
+    color: #c00d0d;
     /* LinkedIn blue for hover */
+}
+
+.audio-control {
+    margin-left: 100px;
 }
 
 
