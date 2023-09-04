@@ -377,6 +377,27 @@ textarea {
     height: 200px;
 }
 
+.contact-video-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px; /* Add appropriate padding */
+}
+
+.video-section {
+    flex: 1;
+    padding: 20px; /* Add appropriate padding */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#ContactVideo {
+    max-width: 100%;
+    height: auto;
+}
+
+/* buttons */
 .button {
     background-color: rgb(133, 105, 105);
     color: white;
