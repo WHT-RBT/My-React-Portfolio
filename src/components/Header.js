@@ -23,7 +23,7 @@ useEffect(() => {
   },);
 
   return (
-    <header style={{ height: '450px' }}>
+    <header style={{ height: '480px' }}>
       <div className="logo-container">
         <img src={logo} alt="Logo" className="logo" style={{ width: '900px', height: '340px' }} />
       </div>

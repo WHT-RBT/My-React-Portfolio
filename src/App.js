@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import 'font-awesome/css/font-awesome.min.css';
 import './App.css';
 import { Element, scroller } from 'react-scroll';
-
 import Header from './components/Header';
 import Footer from './components/Footer';
 import Navigation from './components/Navigation';
@@ -18,27 +17,21 @@ import Contact from './sections/Contact';
 const App = () => {
   const [showEntryPage, setShowEntryPage] = useState(true);
 
-    useEffect(() => {
-      const cursorGlitter = document.createElement('div');
-      cursorGlitter.className = 'cursor-glitter';
-      document.body.appendChild(cursorGlitter);
+  useEffect(() => {
+    // Glitter cursor code removed
+  }, []);
 
- // Cleanup function to remove the glitter element
- return () => {
-  document.body.removeChild(cursorGlitter);
-};
-}, []);
+  const handleEntryPageClick = () => {
+    setShowEntryPage(false); 
+    setTimeout(() => {
+      scroller.scrollTo('header', { 
+        duration: 800,
+        delay: 0,
+        smooth: 'easeInOutQuart'
+      });
+    }, 100); // delay to make sure header/home section shows
+  };
 
-const handleEntryPageClick = () => {
-  setShowEntryPage(false); 
-  setTimeout(() => {
-    scroller.scrollTo('header', { 
-      duration: 800,
-      delay: 0,
-      smooth: 'easeInOutQuart'
-    });
-  }, 100); // delay to make sure portfolio section shows
-};
   return (
     <div className="App">
       {showEntryPage ? (
@@ -47,7 +40,7 @@ const handleEntryPageClick = () => {
         </ErrorBoundary>
       ) : (
         <>
-        <Element name="header"></Element>
+          <Element name="header"></Element>
           <ErrorBoundary>
             <Header />
           </ErrorBoundary>

@@ -33,8 +33,8 @@ const Navigation = () => {
     };
 
     return (
-        <nav style={{ position: 'fixed', top: 0, left: 0, width: '100%', zIndex: 100, border: '1px solid rgb(133, 105, 105)', alignItems: "center", justifyContent: "center" }} >
-            <Link to="header" smooth={true} duration={300} offset={0} style={{ width: '100px', height: '40px' }}>
+        <nav style={{ position: 'fixed', top: 0, left: 0, width: '100%', zIndex: 100, borderBottom: '1px solid rgb(133, 105, 105)', alignItems: "center", justifyContent: "center" }} >
+            <Link to="header" smooth={true} duration={300} offset={-0} style={{ width: '100px', height: '40px' }}>
             Home🌷
             </Link>
             <Link to="aboutMe" smooth={true} duration={300} offset={-35} style={{ width: '100px', height: '40px' }}>

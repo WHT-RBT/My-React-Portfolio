@@ -1,6 +1,6 @@
-body {
-    cursor: url('../src/assets/key.png'), auto;
-}
+/* .cursor-style {
+    cursor: '../assets/key.png';
+} */
 
 body,
 html {
@@ -83,7 +83,7 @@ header {
     align-items: center;
     justify-content: space-between;
     background-color: #ffffff;
-    
+
 }
 
 .logo-container {
@@ -101,7 +101,8 @@ header {
     right: 0;
 }
 
-/* Styling for the hummingbird animation */
+/* hummingbird animation */
+
 @keyframes flyAwayAndReturn {
     0% {
         transform: translateX(0);
@@ -135,8 +136,10 @@ header {
     }
 }
 
-/* Styling for navigation links */
-nav, nav a {
+/* navigation links */
+
+nav,
+nav a {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -147,21 +150,12 @@ nav, nav a {
     height: 40px;
 }
 
-nav:hover, nav a:hover {
+nav:hover,
+nav a:hover {
     color: #c00d0d;
 }
 
-/* .navigation {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #ffffff; 
-    z-index: 100; 
-} */
-
-
-/* Home.css */
+/* Home */
 
 .home-section {
     display: flex;
@@ -185,7 +179,6 @@ nav:hover, nav a:hover {
 .top-content,
 .bottom-content {
     border: 2px solid #000;
-    /* i added borders for visualization */
     padding: 20px;
     text-align: center;
 }
@@ -212,14 +205,13 @@ nav:hover, nav a:hover {
 }
 
 .social-icons a {
-        margin: 0 10px;
+    margin: 0 10px;
     font-size: 24px;
     color: #333;
 }
 
 .social-icons a:hover {
     color: #c00d0d;
-    /* LinkedIn blue for hover */
 }
 
 .audio-control {
@@ -227,7 +219,8 @@ nav:hover, nav a:hover {
 }
 
 
-/* Portfolio Page */
+/* portfolio  */
+
 .portfolio-section {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -236,46 +229,28 @@ nav:hover, nav a:hover {
 
 .portfolio-item {
     background-color: #ccc;
-    padding: 20px;
+    padding: 5px;
     text-align: center;
+    position: relative;
+    overflow: hidden;
+    width: 200px; /* Adjust as needed */
+    height: 200px; /* Adjust as needed */
 }
 
-.item1 {
-    grid-column: span 2;
-    grid-row: span 1;
-}
-
-.item2 {
-    grid-column: span 1;
-    grid-row: span 2;
-}
-
-.item3 {
-    grid-column: span 1;
-    grid-row: span 1;
-}
-
-.item4 {
-    grid-column: span 1;
-    grid-row: span 1;
-}
-
-.item5 {
-    grid-column: span 1;
-    grid-row: span 1;
-}
-
-.item6 {
-    grid-column: span 1;
-    grid-row: span 1;
-}
-
-.item7 {
-    grid-column: span 1;
-    grid-row: span 1;
+.resized-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
 }
 
 /* About Me */
+
 .top-section {
     flex-direction: column;
     align-items: left;
@@ -286,7 +261,7 @@ nav:hover, nav a:hover {
     margin-left: 110px;
     margin-top: 60px;
     margin-bottom: 40px;
-    
+
 }
 
 .text-blocks p {
@@ -326,16 +301,19 @@ nav:hover, nav a:hover {
 }
 
 /* ContactForm */
+
 .contact-form-container {
     display: block;
     justify-content: center;
     align-items: center;
-    height: 100vh; 
+    height: 100vh;
     width: 60%;
 
-}.contact-form {
+}
+
+.contact-form {
     width: 80%;
-    max-width: 400px; 
+    max-width: 400px;
     margin: 0 auto;
     padding: 20px;
     border: 1px solid #ccc;
@@ -381,12 +359,12 @@ textarea {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px; /* Add appropriate padding */
+    padding: 20px;
 }
 
 .video-section {
     flex: 1;
-    padding: 20px; /* Add appropriate padding */
+    padding: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -398,6 +376,7 @@ textarea {
 }
 
 /* buttons */
+
 .button {
     background-color: rgb(133, 105, 105);
     color: white;
@@ -414,8 +393,9 @@ button:hover {
 }
 
 /* footer */
+
 footer {
-    height: 30px; 
+    height: 30px;
     background-color: #000000;
     display: flex;
     align-items: center;
@@ -433,4 +413,3 @@ footer {
     color: #ffffff;
     text-decoration: none;
 }
-
