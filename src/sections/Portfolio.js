@@ -15,7 +15,7 @@ const Portfolio = () => {
         </a>
       </div>
       <div className="portfolio-item" style={{backgroundColor: 'white'}}>
-        <a href="https://dishhunt.com">
+        <a href="https://github.com/WHT-RBT/Dish-Hunt.git">
           <img src={DishHunt} alt="DishHunt" className="resized-image" />
         </a>
       </div>
