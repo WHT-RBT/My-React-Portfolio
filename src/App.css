@@ -219,22 +219,36 @@ nav a:hover {
 }
 
 
-/* portfolio  */
+
+/* portfolio header */
+.portfolio-header {
+    background-color: #ffffff;
+}
+
+/* portfolio hection */
 
 .portfolio-section {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-gap: 16px;
+    grid-gap: 3%;
+    justify-items: center;
+    /* centers horizontally */
+    align-items: center;
+    /* centers vertically */
+    margin-top: 2%;
 }
 
 .portfolio-item {
     background-color: #ccc;
-    padding: 5px;
+    padding: 1.5%;
     text-align: center;
+    justify-content: center;
     position: relative;
     overflow: hidden;
-    width: 200px; /* Adjust as needed */
-    height: 200px; /* Adjust as needed */
+    width: 250px;
+    /* Adjust as needed */
+    height: 250px;
+    /* Adjust as needed */
 }
 
 .resized-image {
@@ -258,15 +272,15 @@ nav a:hover {
 }
 
 .profile-image {
-    margin-left: 110px;
-    margin-top: 60px;
+    margin-left: 5%;
+    margin-top: 11%;
     margin-bottom: 40px;
 
 }
 
 .text-blocks p {
-    margin-left: 40px;
-    padding: 15px 15px 15px 15px;
+    margin-left: 5%;
+    padding: 5%;
 }
 
 .bottom-section {
@@ -412,4 +426,11 @@ footer {
 .social-icons a {
     color: #ffffff;
     text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .portfolio-item {
+        width: 100%;
+        margin-bottom: 10px;
+    }
 }
