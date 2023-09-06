@@ -115,11 +115,12 @@ const ContactVideo = () => {
     return (
         <div className="bottom-section"> 
             {showWhtrbt && (
-                <video id="ContactVideo" muted loop={videoPlaying} autoPlay={videoPlaying} onEnded={handleVideoEnded} style={{ width: '50%', height: 'auto' }}>
+                <video id="ContactVideo" muted loop={videoPlaying} autoPlay={videoPlaying} onEnded={handleVideoEnded} style={{ width: '20%', height: 'auto' }}>
                     <source src={whtrbtVideo} type="video/mp4" />
                 </video>
             )}
             <ContactForm />
+            <ContactVideo />
         </div>
     );
 };

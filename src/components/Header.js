@@ -28,7 +28,7 @@ useEffect(() => {
         <img src={logo} alt="Logo" className="logo" style={{ width: '900px', height: '340px' }} />
       </div>
       {showHummingbird && (
-        <video id="HummingbirdVideo" muted autoPlay style={{ width: '800px', height: '451px' }}>
+        <video id="HummingbirdVideo" muted autoPlay style={{ width: 'auto', height: '100%' }}>
           <source src={hummingbirdVideo} type="video/mp4" />
         </video>
       )}
