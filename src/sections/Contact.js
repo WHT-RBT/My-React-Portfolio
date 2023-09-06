@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from 'react';
-import whtrbtVideo from '../assets/whtrbt.mp4';
+import React, { useState } from 'react';
 
 const FORM_ENDPOINT = 'https://public.herotofu.com/v1/33e0e2a0-4b5a-11ee-b711-0fdc810d0d65';
 
@@ -92,37 +91,6 @@ const ContactForm = () => {
     );
 };
 
-const ContactVideo = () => {
-
-    const [showWhtrbt, setShowWhtrbt] = useState(true);
-
-    useEffect(() => {
-        setTimeout(() => setShowWhtrbt(false), 5000);
-    }, []);
-
-    const [videoPlaying, setVideoPlaying] = useState(true);
-
-    const handleVideoEnded = () => {
-        const videoElement = document.getElementById('ContactVideo');
-        setVideoPlaying(false);
-
-        setTimeout(() => {
-            videoElement.play();
-            setVideoPlaying(true);
-        }, 15000);  // waits 15 seconds
-    };
-
-    return (
-        <div className="bottom-section"> 
-            {showWhtrbt && (
-                <video id="ContactVideo" muted loop={videoPlaying} autoPlay={videoPlaying} onEnded={handleVideoEnded} style={{ width: '20%', height: 'auto' }}>
-                    <source src={whtrbtVideo} type="video/mp4" />
-                </video>
-            )}
             <ContactForm />
-            <ContactVideo />
-        </div>
-    );
-};
 
-export default ContactVideo;
+export default ContactForm;
