@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import grass from '../assets/grass.jpg';
+import ContactMe from '../assets/Contact_Me.png';
 
 const FORM_ENDPOINT = 'https://public.herotofu.com/v1/33e0e2a0-4b5a-11ee-b711-0fdc810d0d65';
 
@@ -91,6 +93,32 @@ const ContactForm = () => {
     );
 };
 
-            <ContactForm />
+<ContactForm />
 
-export default ContactForm;
+
+const Contact = () => (
+    <div style={{ position: 'relative', backgroundColor: 'black', color: 'white' }}> {/* Updated this line */}
+        <div style={{ textAlign: 'center', color: 'white' }}>
+            <img src={ContactMe} alt="ContactMe Header" style={{ maxWidth: '100%' }} />
+        </div>
+
+        {/* Contact Form and Video */}
+        <div style={{ display: 'flex', justifyContent: 'space-between', color: 'white' }}>
+            <div style={{ flex: '3' }}>
+            <p style={{ color: 'white' }}>This is some information above the contact form.</p>
+
+                <ContactForm />
+            </div>
+            <div style={{ flex: '1' }}>
+                <video src="../assets/whtrbt.mp4" controls style={{ Width: '100%' }}></video>
+            </div>
+        </div>
+
+        <div style={{ position: 'absolute', bottom: '0', width: '100%' }}>
+        <img src={grass} alt="Footer" style={{ width: '100%' }} />
+        </div>
+    </div>
+);
+
+export default Contact;
+
