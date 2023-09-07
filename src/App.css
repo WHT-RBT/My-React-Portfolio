@@ -222,10 +222,10 @@ nav a:hover {
 
 /* portfolio header */
 .portfolio-header {
-    background-color: #ffffff;
+    background-color: #000000;
 }
 
-/* portfolio hection */
+/* portfolio section */
 
 .portfolio-section {
     display: grid;
@@ -322,17 +322,20 @@ nav a:hover {
     align-items: center;
     height: 100vh;
     width: 60%;
+    background-color: #000000;
+
 
 }
 
 .contact-form {
     width: 80%;
     max-width: 400px;
+    color: white;
     margin: 0 auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 4px #9282821a;
     font-family: Arial, sans-serif;
     text-align: center;
 }
