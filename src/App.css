@@ -229,13 +229,15 @@ nav a:hover {
 
 .portfolio-section {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 2fr);
     grid-gap: 3%;
+    justify-content: center;
     justify-items: center;
     /* centers horizontally */
     align-items: center;
     /* centers vertically */
     margin-top: 2%;
+    margin-bottom: 20%;
 }
 
 .portfolio-item {
@@ -320,9 +322,8 @@ nav a:hover {
     display: block;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 70vh;
     width: 60%;
-    background-color: #000000;
 
 
 }
@@ -370,26 +371,6 @@ textarea:focus {
 textarea {
     resize: vertical;
     height: 200px;
-}
-
-.contact-video-container {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-}
-
-.video-section {
-    flex: 1;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#ContactVideo {
-    max-width: 100%;
-    height: auto;
 }
 
 /* buttons */

@@ -2,7 +2,7 @@ import React, { useRef, useEffect, useState } from 'react';
 import keyImage from '../assets/key.png';
 import keyholeImage from '../assets/keyhole.png';
 import entryVideo from '../assets/entryvideo.mp4';
-import song1 from '../assets/song1.mp3';
+import song2 from '../assets/song2.mp3';
 
 const EntryPage = ({ onEnter }) => {
     const videoRef = useRef(null);
@@ -34,7 +34,7 @@ const EntryPage = ({ onEnter }) => {
                 currentVideoRef.removeEventListener('ended', handleVideoEnd);
             };
         }
-    }, );
+    },);
 
     return (
         <div className="entry-page" style={{ backgroundColor: 'black' }}>
@@ -51,7 +51,7 @@ const EntryPage = ({ onEnter }) => {
                         <source src={entryVideo} type="video/mp4" />
                     </video>
                     <audio ref={audioRef} loop={false} className="hidden">
-                        <source src={song1} type="audio/mp3" />
+                        <source src={song2} type="audio/mp3" />
                     </audio>
                 </>
             )}

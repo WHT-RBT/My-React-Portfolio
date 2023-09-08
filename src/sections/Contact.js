@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import grass from '../assets/grass.jpg';
 import ContactMe from '../assets/Contact_Me.png';
+import whtrbt from '../assets/whtrbt.mp4';
 
 const FORM_ENDPOINT = 'https://public.herotofu.com/v1/33e0e2a0-4b5a-11ee-b711-0fdc810d0d65';
 
@@ -53,6 +53,8 @@ const ContactForm = () => {
             action={FORM_ENDPOINT}
             onSubmit={handleSubmit}
             method="POST"
+            style={{ marginBottom: '0px' }} 
+
         >
             <div className="pt-0 mb-3">
                 <input
@@ -81,13 +83,17 @@ const ContactForm = () => {
                 />
             </div>
             <div className="pt-0 mb-3">
+            <div style={{ textAlign: 'center' }}>
+
                 <button
                     className="active:bg-blue-600 hover:shadow-lg focus:outline-none px-6 py-3 mb-1 mr-1 text-sm font-bold text-white uppercase transition-all duration-150 ease-linear bg-blue-500 rounded shadow outline-none"
                     type="submit"
                 >
-                    Send a message
+                    Send me a message!
                 </button>
             </div>
+            </div>
+
         </form>
 
     );
@@ -97,25 +103,22 @@ const ContactForm = () => {
 
 
 const Contact = () => (
-    <div style={{ position: 'relative', backgroundColor: 'black', color: 'white' }}> {/* Updated this line */}
-        <div style={{ textAlign: 'center', color: 'white' }}>
+    <div style={{ position: 'relative', backgroundColor: 'black', color: 'white', minHeight: '50%', marginBottom: '0px' }}> 
+        <div style={{ textAlign: 'left', color: 'white' }}>
             <img src={ContactMe} alt="ContactMe Header" style={{ maxWidth: '100%' }} />
         </div>
 
         {/* Contact Form and Video */}
-        <div style={{ display: 'flex', justifyContent: 'space-between', color: 'white' }}>
-            <div style={{ flex: '3' }}>
-            <p style={{ color: 'white' }}>This is some information above the contact form.</p>
+        <div style={{ display: 'flex', justifyContent: 'space-between', color: 'white', marginBottom: '0px' }}>
+            <div style={{ marginLeft: '5%', marginRight: '1%', marginBottom: '0px', padding: '0px' }}>
+            <p style={{ color: 'white', textAlign: 'left' }}>Thank you for visiting my site! <br /><br />Please feel free to visit any time to see what other projects I'm working on, or what has been added to my portfolio.<br /><br />
+            I look forward to hearing from you!</p>
 
                 <ContactForm />
             </div>
-            <div style={{ flex: '1' }}>
-                <video src="../assets/whtrbt.mp4" controls style={{ Width: '100%' }}></video>
+            <div style={{ width: '40%', display: 'flex', justifyContentustifyContent: 'flex-start', marginBottom: '0px' }}>
+            <video src={whtrbt} controls loop autoPlay style={{ width: '100%', maxHeight: '400px', marginBottom: '0px' }}></video>
             </div>
-        </div>
-
-        <div style={{ position: 'absolute', bottom: '0', width: '100%' }}>
-        <img src={grass} alt="Footer" style={{ width: '100%' }} />
         </div>
     </div>
 );
