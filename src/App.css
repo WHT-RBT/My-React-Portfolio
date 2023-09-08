@@ -16,7 +16,7 @@ html {
     background-color: black;
 }
 
-
+/* entry video */
 .video {
     position: fixed;
     top: 0;
@@ -64,19 +64,6 @@ html {
     opacity: 1;
 }
 
-@keyframes cursorGlitter {
-
-    0%,
-    100% {
-        opacity: 1;
-        transform: scale(1);
-    }
-
-    50% {
-        opacity: 0.2;
-        transform: scale(2);
-    }
-}
 
 header {
     display: flex;
@@ -86,16 +73,7 @@ header {
 
 }
 
-.logo-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin: 0
-}
-
 .hummingbirdvideo {
-    width: 100px;
-    height: 100px;
     position: absolute;
     top: 0;
     right: 0;
@@ -119,7 +97,7 @@ header {
         opacity: 1;
     }
 }
-
+/* unicorn */
 .video-background {
     position: fixed;
     top: 0;
@@ -229,7 +207,7 @@ nav a:hover {
 
 .portfolio-section {
     display: grid;
-    grid-template-columns: repeat(3, 2fr);
+    grid-template-columns: repeat(4, 2fr);
     grid-gap: 3%;
     justify-content: center;
     justify-items: center;
@@ -242,15 +220,33 @@ nav a:hover {
 
 .portfolio-item {
     background-color: #ccc;
-    padding: 1.5%;
+    padding: 2%;
     text-align: center;
     justify-content: center;
     position: relative;
     overflow: hidden;
-    width: 250px;
-    /* Adjust as needed */
-    height: 250px;
-    /* Adjust as needed */
+    width: 200px;
+    height: 200px;
+}
+/* Media Query for tablets and below */
+@media screen and (max-width: 1024px) {
+    .portfolio-section {
+        grid-template-columns: repeat(3, 2fr);
+    }
+}
+
+/* Media Query for small tablets and mobile landscape */
+@media screen and (max-width: 768px) {
+    .portfolio-section {
+        grid-template-columns: repeat(2, 2fr);
+    }
+}
+
+/* Media Query for mobile portrait */
+@media screen and (max-width: 480px) {
+    .portfolio-section {
+        grid-template-columns: repeat(1, 2fr);
+    }
 }
 
 .resized-image {

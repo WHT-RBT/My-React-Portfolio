@@ -76,7 +76,7 @@ const ContactForm = () => {
             </div>
             <div className="pt-0 mb-3">
                 <textarea
-                    placeholder="Message me here..."
+                    placeholder="Your message here..."
                     name="message"
                     className="focus:outline-none focus:ring relative w-full px-3 py-3 text-sm text-gray-600 placeholder-gray-400 bg-white border-0 rounded shadow outline-none"
                     required
@@ -89,7 +89,7 @@ const ContactForm = () => {
                     className="active:bg-blue-600 hover:shadow-lg focus:outline-none px-6 py-3 mb-1 mr-1 text-sm font-bold text-white uppercase transition-all duration-150 ease-linear bg-blue-500 rounded shadow outline-none"
                     type="submit"
                 >
-                    Send me a message!
+                    Submit message!
                 </button>
             </div>
             </div>

@@ -24,11 +24,9 @@ useEffect(() => {
 
   return (
     <header style={{ height: '480px' }}>
-      <div className="logo-container">
-        <img src={logo} alt="Logo" className="logo" style={{ width: '900px', height: '340px' }} />
-      </div>
+        <img src={logo} alt="Logo" className="logo" style={{ width: '60%', height: 'auto', margin: '0px', position: 'absolute', top: '8%', left: '0' }} />
       {showHummingbird && (
-        <video id="HummingbirdVideo" muted autoPlay style={{ width: 'auto', height: '100%' }}>
+        <video id="HummingbirdVideo" muted autoPlay style={{ width: '40%', height: 'auto', margin: '0px', position: 'absolute', top: '0', right: '0' }}>
           <source src={hummingbirdVideo} type="video/mp4" />
         </video>
       )}
