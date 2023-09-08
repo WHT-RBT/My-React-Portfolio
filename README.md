@@ -1,7 +1,7 @@
 # React Challenge: My React Portfolio
 <br>
 
-![Technologies](https://img.shields.io/badge/-Git-F05032?logo=Git&logoColor=white)   ![React](https://img.shields.io/badge/React-8A2BE2)  ![HTML](https://img.shields.io/badge/-HTML-LTGREEN)   ![CSS](https://img.shields.io/badge/-CSS-gray)   ![NODE](https://img.shields.io/badge/-NODE-orange)   ![JS](https://img.shields.io/badge/-JavaScript-yellow)   ![Handlebars](https://img.shields.io/badge/Handlebars-8A2BE2)   ![JSON](https://img.shields.io/badge/JSON-0F2BF2)
+![Technologies](https://img.shields.io/badge/-Git-F05032?logo=Git&logoColor=white)   ![React](https://img.shields.io/badge/React-8A2BE2)  ![HTML](https://img.shields.io/badge/-HTML-LTGREEN)   ![CSS](https://img.shields.io/badge/-CSS-gray)   ![NODE](https://img.shields.io/badge/-NODE-orange)   ![JS](https://img.shields.io/badge/-JavaScript-yellow)   ![JSON](https://img.shields.io/badge/JSON-0F2BF2)
 
 <br>
 
@@ -30,7 +30,7 @@ My portfolio is a single-page application built with React, and here are the key
 <br>
 
 - ### About Me
-    In the "About Me" section, you'll find a little information about excitement in this journey, and as my new skills as the develop. To make it more personal, I've also included an image that resonates with my personality.
+    In the "About Me" section, you'll find a little information about the excitement in this journey. To make it more personal, I've also included an image that resonates with my personality.
 <br>
 
 - ### Portfolio
