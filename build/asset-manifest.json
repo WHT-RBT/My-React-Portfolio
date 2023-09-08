@@ -1,0 +1,40 @@
+{
+  "files": {
+    "main.css": "/my-react-portfolio/static/css/main.5dec0e00.css",
+    "main.js": "/my-react-portfolio/static/js/main.963a2c2b.js",
+    "static/media/unicorn.mp4": "/my-react-portfolio/static/media/unicorn.5a75c1a67ecc2aede411.mp4",
+    "static/media/entryvideo.mp4": "/my-react-portfolio/static/media/entryvideo.e6bea7382f8a52e47c78.mp4",
+    "static/media/hummingbird.mp4": "/my-react-portfolio/static/media/hummingbird.9fa47a8be1b3b75da8f4.mp4",
+    "static/media/whtrbt.mp4": "/my-react-portfolio/static/media/whtrbt.4fe395e022629e58f11d.mp4",
+    "static/media/dreamon.png": "/my-react-portfolio/static/media/dreamon.a1a16552c00b14b6e857.png",
+    "static/media/song1.mp3": "/my-react-portfolio/static/media/song1.a7c7e73084f768b32a61.mp3",
+    "static/media/Bunnyville.png": "/my-react-portfolio/static/media/Bunnyville.f840d3ea8d05423c4aae.png",
+    "static/media/TheJourney.png": "/my-react-portfolio/static/media/TheJourney.f2a389074f8f7a02a011.png",
+    "static/media/key.png": "/my-react-portfolio/static/media/key.7fd1af0c4c8fe25b9861.png",
+    "static/media/flowers.jpg": "/my-react-portfolio/static/media/flowers.7d141b68033b1ea165cd.jpg",
+    "static/media/song2.mp3": "/my-react-portfolio/static/media/song2.bd2319d42c0ad1066f6a.mp3",
+    "static/media/fontawesome-webfont.svg?v=4.7.0": "/my-react-portfolio/static/media/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg",
+    "static/media/MadeWithLove.png": "/my-react-portfolio/static/media/MadeWithLove.6b05d0e775400e0e24a6.png",
+    "static/media/profile-image.jpg": "/my-react-portfolio/static/media/profile-image.532c2e4ea59e3699c96d.jpg",
+    "static/media/fontawesome-webfont.eot": "/my-react-portfolio/static/media/fontawesome-webfont.8b43027f47b20503057d.eot",
+    "static/media/fontawesome-webfont.ttf?v=4.7.0": "/my-react-portfolio/static/media/fontawesome-webfont.1e59d2330b4c6deb84b3.ttf",
+    "static/media/Resume_Lavina.pdf": "/my-react-portfolio/static/media/Resume_Lavina.7f62aa3378dc64d32afd.pdf",
+    "static/media/Portfolio.png": "/my-react-portfolio/static/media/Portfolio.6e38529a51df47138865.png",
+    "static/media/bucketlist.jpg": "/my-react-portfolio/static/media/bucketlist.7e09496f197ec869129f.jpg",
+    "static/media/AboutMe.png": "/my-react-portfolio/static/media/AboutMe.78e1fcab5036e6e7797c.png",
+    "static/media/fontawesome-webfont.woff?v=4.7.0": "/my-react-portfolio/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
+    "static/media/fontawesome-webfont.woff2?v=4.7.0": "/my-react-portfolio/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
+    "static/media/weather.png": "/my-react-portfolio/static/media/weather.b977a353c8492874fee7.png",
+    "static/media/dishhunt.png": "/my-react-portfolio/static/media/dishhunt.b7dbf789db29a85b2fdf.png",
+    "static/media/logo.png": "/my-react-portfolio/static/media/logo.4a7d7a536e7e997374b6.png",
+    "static/media/Contact_Me.png": "/my-react-portfolio/static/media/Contact_Me.eecacce525e4d20c21a0.png",
+    "static/media/timekiller.png": "/my-react-portfolio/static/media/timekiller.35c5b75458842cb4a218.png",
+    "index.html": "/my-react-portfolio/index.html",
+    "main.5dec0e00.css.map": "/my-react-portfolio/static/css/main.5dec0e00.css.map",
+    "main.963a2c2b.js.map": "/my-react-portfolio/static/js/main.963a2c2b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5dec0e00.css",
+    "static/js/main.963a2c2b.js"
+  ]
+}
