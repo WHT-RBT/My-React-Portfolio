@@ -24,16 +24,15 @@ const AboutMe = () => {
 
     return (
 <div className="about-me">
-            {/* Add the header image with inline styling */}
             <img
                 src={About}
                 alt="About"
                 className="about-me-header"
                 style={{
                     position: 'absolute',
-                    top: '3%', // Adjust the top position as needed
-                    left: '1%', // Adjust the right position as needed
-                    width: '30%', // Adjust the width as needed
+                    top: '3%', 
+                    left: '1%', 
+                    width: '30%', 
                     height: 'auto',
                 }}
             />
@@ -44,7 +43,6 @@ const AboutMe = () => {
 
                 <div className="text-blocks" style={{ width: '40%', height: 'auto' }}>
                     <p style={{ backgroundColor: 'rgba(255, 255, 255, 0.5)', borderRadius: '5px', fontSize: '16px', fontStyle: 'italic', color: '#000' }}>Thank you for visiting my Portfolio page. I am excited you are here. A little about myself, I love being creative and enjoying sharing my creations, in any way possible, whether it's crafts, stories, designing, and pretty much anything I can use to express myself. <br /><br />I'm currently studying for a Certification in Full Stack Web Development at an ASU Bootcamp and I couldn't be more excited about this new journey! <br /><br />With a diverse background and an unyielding passion for learning, I'm eager to share my unique skills. Friendly, adaptable, and committed to growth—I can't wait to see where this new career path takes me!</p>
-                    {/* Add more <p> elements for additional paragraphs */}
                 </div>
             </div>
             <div className="bottom-section">

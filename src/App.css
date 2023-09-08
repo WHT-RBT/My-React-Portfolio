@@ -97,6 +97,7 @@ header {
         opacity: 1;
     }
 }
+
 /* unicorn */
 .video-background {
     position: fixed;
@@ -228,6 +229,7 @@ nav a:hover {
     width: 200px;
     height: 200px;
 }
+
 /* Media Query for tablets and below */
 @media screen and (max-width: 1024px) {
     .portfolio-section {
