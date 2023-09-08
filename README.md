@@ -30,7 +30,7 @@ My portfolio is a single-page application built with React, and here are the key
 <br>
 
 - ### About Me
-    In the "About Me" section, you'll find a little information about excitement in this journey, and as my new skills as the develop. To make it more personal, I've also included an image that resonates with my personality.
+    In the "About Me" section, you'll find a little information about the excitement in this journey. To make it more personal, I've also included an image that resonates with my personality.
 <br>
 
 - ### Portfolio
