@@ -226,8 +226,8 @@ nav a:hover {
     justify-content: center;
     position: relative;
     overflow: hidden;
-    width: 200px;
-    height: 200px;
+    width: 130px;
+    height: 130px;
 }
 
 /* Media Query for tablets and below */

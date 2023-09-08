@@ -2,8 +2,15 @@ import React from 'react';
 
 const Footer = () => {
     return (
-        <footer style={{ marginTop: '0px', marginBottom: '0px' }}>
-                <p style={{ color: 'white', fontFamily: 'sans-serif', fontSize: '13px'}}>&copy; 2023 Lavina&nbsp;&nbsp;All rights reserved 🌷&nbsp;&nbsp;&nbsp;</p>
+        <footer style={{ 
+            position: 'fixed', 
+            bottom: 0, 
+            width: '100%', 
+            backgroundColor: '#333', 
+            zIndex: 1000,
+            marginTop: '0px', 
+            marginBottom: '0px'
+        }}>                <p style={{ color: 'white', fontFamily: 'sans-serif', fontSize: '13px'}}>&copy; 2023 Lavina&nbsp;&nbsp;All rights reserved 🌷&nbsp;&nbsp;&nbsp;</p>
 
                 <div className="social-icons" style={{ display: 'flex', justifyContent: 'space-between' }}>
                 <a href="https://github.com/WHT-RBT" target="_blank" rel="noopener noreferrer">
