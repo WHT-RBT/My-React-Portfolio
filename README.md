@@ -71,7 +71,7 @@ Demo Link: https://drive.google.com/file/d/1B_085uRgWyYdnwwWroAfGtjA8dfqrkd0/vie
 
 
 Live url: <br>
-[https://github.com/WHT-RBT/My-React-Portfolio.git](https://wht-rbt.github.io/My-React-Portfolio/) 
+https://wht-rbt.github.io/My-React-Portfolio 
 
 GitHub repo: <br>
 https://github.com/WHT-RBT/My-React-Portfolio 
