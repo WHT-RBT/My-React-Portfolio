@@ -1,132 +1,77 @@
-# React Challenge: React Portfolio
+# React Challenge: My React Portfolio
+<br>
 
-Being a web developer means being part of a community. You’ll need a place to share your projects not only if you're applying for jobs or working as a freelancer but also so that you can share your work with fellow developers and collaborate on future projects.
+![Technologies](https://img.shields.io/badge/-Git-F05032?logo=Git&logoColor=white)   ![React](https://img.shields.io/badge/React-8A2BE2)  ![HTML](https://img.shields.io/badge/-HTML-LTGREEN)   ![CSS](https://img.shields.io/badge/-CSS-gray)   ![NODE](https://img.shields.io/badge/-NODE-orange)   ![JS](https://img.shields.io/badge/-JavaScript-yellow)   ![Handlebars](https://img.shields.io/badge/Handlebars-8A2BE2)   ![JSON](https://img.shields.io/badge/JSON-0F2BF2)
 
-Now that you’ve completed multiple projects, your task is to create a portfolio, using your new React skills to help set you apart from other developers whose portfolios don’t use the latest technologies.
+<br>
 
-Just as you did in the module project, you’ll need to deploy this application to GitHub Pages. Follow the same instructions that you did for the project to create a build that you can deploy.
+## Table of Contents
 
-## User Story
 
-AS AN employer looking for candidates with experience building single-page applications
+* [Features](#features)
 
-I WANT to view a potential employee's deployed React portfolio of work samples
+* [Deployment](#deployment)
 
-SO THAT I can assess whether they're a good candidate for an open position
+* [Conclusion](#conclusion)
 
+* [Demo](#demo)
+ 
+* [Links](#links)
 
-## Mock-Up
+<br>
 
+## Features
 
+My portfolio is a single-page application built with React, and here are the key features:
+<br>
 
+- ### Home Page
+    The home page serves as the introduction to my portfolio. I've included a logo that embodies my brand and gives you a glimpse into my design sensibilities.
+<br>
 
-## Getting Started
+- ### About Me
+    In the "About Me" section, you'll find a little information about excitement in this journey, and as my new skills as the develop. To make it more personal, I've also included an image that resonates with my personality.
+<br>
 
-The application that you built for this module will help you know where to start when building your portfolio. You’ll use Create React App just as you did with your module project, but you should be aware of a few structural differences in the component hierarchy. Your portfolio should include the following:
+- ### Portfolio
+    The portfolio section showcases a couple of my current school projects, as well as a few personal projects. 
+<br>
 
-A single Header component that appears on multiple pages
 
-A single Navigation component within the header that will be used to conditionally render the different sections of your portfolio
+- ### Contact Page
+    Want to get in touch? The contact page has a contact form that you can use to reach out to me. Whether it's a job offer, a collaboration, or just a chat about code, I'd love to hear from you!
+<br>
+<br>
 
-A single Project component that will be used multiple times in the Portfolio section
+## Deployment
 
-A single Footer component that appears on multiple pages
+The portfolio is currently deployed on GitHub Pages. 
+<br>
+<br>
 
-## NOTE
+## Conclusion
 
-The contact form should be similar to the one you built in the module project. Because this application doesn’t include a back end or connect to an API, you can set up this functionality the same way you did in the module project and add in back-end functionality after you’ve covered it in the next few weeks.
+Feel free to explore the site, look at my projects, and connect with me through the contact form. Thank you for taking the time to visit my portfolio, and I look forward to potential collaborations or opportunities.
 
-In the meantime, consider adding your email address and phone number on the Contact page.
+Happy Browsing!
 
 
-## Projects
+## Demo
 
-For each project you feature in your portfolio, you should include the following:
+![Dmo](src/assets/MyReactPortfolio.gif)
 
-An image of the deployed application (either a GIF or a screenshot)
+<br>
 
-The title of the project
+## Links
 
-A link to the deployed application
 
-A link to the corresponding GitHub repository
+Live url: <br>
+https://github.com/WHT-RBT/My-React-Portfolio.git 
 
-## Design
+GitHub repo: <br>
+https://github.com/WHT-RBT/My-React-Portfolio 
 
-As with the previous portfolio Challenge, remember that "good" design is subjective; however, your site should look polished. Here are a few guidelines on what that means:
+<br>
+<br>
 
-Use mobile-first design.
-
-Choose a color palette so that your site doesn't just look like the default Bootstrap theme or an unstyled HTML site. Look into resources like CoolorsLinks to an external site. or another color scheme generator to help you create something that will stand out.
-
-Make sure the font size is large enough to read and that the colors don't cause eye strain.
-
-Consider using animations and React component libraries. Note that this will not affect your grade, but it may impact how potential employers gauge your knowledge.
-
-
-## Grading Requirements
-
-NOTE
-If a Challenge assignment submission is marked as “0”, it is considered incomplete and will not count towards your graduation requirements. Examples of incomplete submissions include the following:
-
-A repository that has no code
-
-A repository that includes a unique name but nothing else
-
-A repository that includes only a README file but nothing else
-
-A repository that only includes starter code
-
-This Challenge is graded based on the following criteria:
-
-### Technical Acceptance Criteria: 40%
-
-Satisfies all of the preceding acceptance criteria plus the following:
-
-Application must use React to render content.
-
-Application has a single Header component that appears on multiple pages, with a Navigation component within it that’s used to conditionally render About Me, Portfolio, Contact, and Resume sections.
-
-Application has a single Project component that’s used multiple times in the Portfolio section.
-
-Application has a single Footer component that appears on multiple pages.
-
-Application must be deployed to GitHub Pages.
-
-### Deployment: 32%
-
-Application deployed at live URL.
-
-Application loads with no errors.
-
-Application GitHub URL submitted.
-
-GitHub repository contains application code.
-
-### Application Quality: 15%
-
-User experience is intuitive and easy to navigate.
-
-User interface style is clean and polished.
-
-Application uses a color scheme other than the default Bootstrap color palette.
-
-### Repository Quality: 13%
-
-Repository has a unique name.
-
-Repository follows best practices for file structure and naming conventions.
-
-Repository follows best practices for class/id naming conventions, indentation, quality comments, etc.
-
-Repository contains multiple descriptive commit messages.
-
-Repository contains a high-quality README file with description, screenshot, and link to deployed application.
-
-### How to Submit the Challenge
-
-You are required to submit BOTH of the following for review:
-
-The URL of the functional, deployed application.
-
-The URL of the GitHub repository, with a unique name and a README describing the project.
+&copy; 2023 Lavina&nbsp;&nbsp;All rights reserved 🌷
