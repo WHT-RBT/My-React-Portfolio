@@ -103,13 +103,13 @@ const ContactForm = () => {
 
 
 const Contact = () => (
-    <div style={{ position: 'relative', backgroundColor: 'black', color: 'white', minHeight: '50%', marginBottom: '0px', marginRight: '0px' }}> 
+    <div style={{ position: 'relative', backgroundColor: 'black', color: 'white', minHeight: '30%', marginBottom: '0px', margin: '0px' }}> 
         <div style={{ textAlign: 'left', color: 'white', marginRight: '0px' }}>
             <img src={ContactMe} alt="ContactMe Header" style={{ maxWidth: '100%' }} />
         </div>
 
         {/* Contact Form and Video */}
-        <div style={{ display: 'flex', justifyContent: 'space-between', color: 'white', marginBottom: '0px', width: '80%', marginRight: '2%' }}>
+        <div style={{ display: 'flex', flexDirection: 'row-reverse', justifyContent: 'space-between', color: 'white', marginBottom: '0px', width: '80%', marginRight: '0px' }}>
             <div style={{ marginLeft: '5%', marginRight: '1%', marginBottom: '0px', padding: '0px', width: '80%' }}>
             <p style={{ color: 'white', textAlign: 'left',  width: '75%', marginRight: '3%'}}>Thank you for visiting my site! <br /><br />Please feel free to visit any time to see what other projects I'm working on, or what has been added to my portfolio.<br /><br />
             I look forward to hearing from you!</p>
@@ -117,7 +117,7 @@ const Contact = () => (
                 <ContactForm />
             </div>
             <div style={{ width: '50%', display: 'flex', justifyContentustifyContent: 'flex-start', marginBottom: '0px' }}>
-            <video src={whtrbt} controls loop autoPlay style={{ width: '100%', maxHeight: '400px', marginBottom: '0px' }}></video>
+            <video src={whtrbt} loop autoPlay style={{ width: '100%', maxHeight: '400px', marginBottom: '0px', marginTop: '40%' }}></video>
             </div>
         </div>
     </div>

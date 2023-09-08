@@ -322,7 +322,7 @@ nav a:hover {
     display: block;
     justify-content: center;
     align-items: center;
-    height: 70vh;
+    height: 50vh;
     width: 60%;
 
 
@@ -333,7 +333,8 @@ nav a:hover {
     max-width: 400px;
     color: white;
     margin: 0 auto;
-    padding: 20px;
+    padding: 10px;
+    margin-right: 0px;
     border: 1px solid #ccc;
     border-radius: 5px;
     box-shadow: 0 2px 4px #9282821a;
@@ -355,11 +356,11 @@ label {
 input,
 textarea {
     width: 100%;
-    padding: 15px;
-    margin: 20px;
+    padding: 10px;
+    margin: 10px;
     border: 1px solid #ccc;
     border-radius: 3px;
-    font-size: 14px;
+    font-size: 13px;
     transition: border-color 0.2s;
 }
 
