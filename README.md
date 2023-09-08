@@ -58,7 +58,12 @@ Happy Browsing!
 
 ## Demo
 
-![Dmo](src/assets/MyReactPortfolio.gif)
+<br>
+
+Demo Link: https://drive.google.com/file/d/1B_085uRgWyYdnwwWroAfGtjA8dfqrkd0/view
+<br>
+
+![Demo](src/assets/MyReactPortfolio.gif)
 
 <br>
 
