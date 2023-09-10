@@ -208,7 +208,7 @@ nav a:hover {
 
 .portfolio-section {
     display: grid;
-    grid-template-columns: repeat(4, 2fr);
+    grid-template-columns: repeat(3, 2fr);
     grid-gap: 3%;
     justify-content: center;
     justify-items: center;
