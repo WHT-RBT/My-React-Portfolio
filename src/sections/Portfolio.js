@@ -9,6 +9,7 @@ import Bunnyville from '../assets/Bunnyville.png';
 import TheJourney from '../assets/TheJourney.png';
 import WeatherDashboard from '../assets/weather.png';
 import MyPortfolio from '../assets/Portfolio.png';
+import talkcode2me from '../assets/talkcode2me_blk.png';
 
 
 const Portfolio = () => {
@@ -73,6 +74,12 @@ const Portfolio = () => {
               <img src={DreamOn} alt="DreamOn" className="resized-image" />
             </a>
           </div>
+          <div className="portfolio-item" style={{ backgroundColor: 'white' }}>
+            <a href="https://talkcode2me.com">
+              <img src={talkcode2me} alt="talkcode2me" className="resized-image" />
+            </a>
+          </div>
+
         </div>
       </div>
     </div>

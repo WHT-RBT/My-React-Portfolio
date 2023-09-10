@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/my-react-portfolio/static/css/main.5dec0e00.css",
-    "main.js": "/my-react-portfolio/static/js/main.e96ae580.js",
+    "main.js": "/my-react-portfolio/static/js/main.e2997c7b.js",
     "static/media/unicorn.mp4": "/my-react-portfolio/static/media/unicorn.5a75c1a67ecc2aede411.mp4",
     "static/media/entryvideo.mp4": "/my-react-portfolio/static/media/entryvideo.e6bea7382f8a52e47c78.mp4",
     "static/media/hummingbird.mp4": "/my-react-portfolio/static/media/hummingbird.9fa47a8be1b3b75da8f4.mp4",
@@ -24,6 +24,7 @@
     "static/media/AboutMe.png": "/my-react-portfolio/static/media/AboutMe.78e1fcab5036e6e7797c.png",
     "static/media/fontawesome-webfont.woff?v=4.7.0": "/my-react-portfolio/static/media/fontawesome-webfont.f691f37e57f04c152e23.woff",
     "static/media/fontawesome-webfont.woff2?v=4.7.0": "/my-react-portfolio/static/media/fontawesome-webfont.20fd1704ea223900efa9.woff2",
+    "static/media/talkcode2me_blk.png": "/my-react-portfolio/static/media/talkcode2me_blk.9b42dc1d84bfe13b728f.png",
     "static/media/weather.png": "/my-react-portfolio/static/media/weather.b977a353c8492874fee7.png",
     "static/media/dishhunt.png": "/my-react-portfolio/static/media/dishhunt.b7dbf789db29a85b2fdf.png",
     "static/media/logo.png": "/my-react-portfolio/static/media/logo.4a7d7a536e7e997374b6.png",
@@ -31,10 +32,10 @@
     "static/media/timekiller.png": "/my-react-portfolio/static/media/timekiller.35c5b75458842cb4a218.png",
     "index.html": "/my-react-portfolio/index.html",
     "main.5dec0e00.css.map": "/my-react-portfolio/static/css/main.5dec0e00.css.map",
-    "main.e96ae580.js.map": "/my-react-portfolio/static/js/main.e96ae580.js.map"
+    "main.e2997c7b.js.map": "/my-react-portfolio/static/js/main.e2997c7b.js.map"
   },
   "entrypoints": [
     "static/css/main.5dec0e00.css",
-    "static/js/main.e96ae580.js"
+    "static/js/main.e2997c7b.js"
   ]
 }
