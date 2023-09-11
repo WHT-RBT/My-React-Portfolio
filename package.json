@@ -2,7 +2,7 @@
   "name": "my-react-portfolio",
   "version": "1.0.0",
   "private": true,
-  "homepage": "/my-react-portfolio/",
+  "homepage": "https://WHT-RBT.github.io/My-React-Portfolio",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
